@@ -67,3 +67,6 @@ button{
     border: red 1px solid;
     box-shadow: 1px 1px 10px ;
 }
+img{
+    width: 150px;
+}
