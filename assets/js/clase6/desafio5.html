@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let prod = ["teclado","mouse","pc","prod4"];
+
+//        inicio    ;  condicion     ; actualisar
+for (  let i=0   ;   i < prod.length   ;  i++ ){
+    console.log(`Producto ${i+1}: ${prod[i]}`)
+}
+
+prod.pop()
+
+console.log("\n--------------------")
+
+console.log('nuevo stock:')
+
+for (  let i=0   ;   i < prod.length   ;  i++ ){
+    console.log(`Producto ${i+1}: ${prod[i]}`)
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="nombreProducto">Smartphone</h1>
+    <p id="precioProducto">precio: $500</p>
+
+    <script>
+    let precioP = document.getElementById('precioProducto')
+setTimeout(() => {
+    precioP.innerText = 'precio: $450';
+    let titulo = document.querySelector('h1')
+    titulo.style.color = 'red'     
+},4000)
+
+    
+    </script>
+</body>
+</html>
