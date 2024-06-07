@@ -1,5 +1,4 @@
-  /* Estilos en línea para simplificar */
-  body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -22,6 +21,7 @@ nav ul li {
     margin-right: 10px;
 }
 .card {
+    position: relative;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
@@ -55,11 +55,12 @@ a:hover {
     background-color: red;
     border: 1px solid black;
     border-radius: 5px;
+    
 }
 
 
 /*AGREGAR*/
-button{
+.bonton-logout {
     background:transparent;
     padding: 10px;
     color: white;
@@ -67,6 +68,82 @@ button{
     border: red 1px solid;
     box-shadow: 1px 1px 10px ;
 }
-img{
-    width: 150px;
+
+
+/* carrito */
+
+.cart {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.cart-items {
+    margin-top: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+.cerrar-carrito {
+    display: block;
+    margin-bottom: 1rem;
+    background-color: #f44336;
+}
+
+.cerrar-carrito:hover {
+    background-color: #e31e1e;
+}
+
+.carrito-boton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.carrito-boton:hover {
+    background-color: #45a049;
+}
+
+.comprar-boton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.comprar-boton:hover {
+    background-color: #45a049;
+}
+
+.botonCart{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+

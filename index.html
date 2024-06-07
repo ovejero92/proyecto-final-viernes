@@ -16,15 +16,27 @@
         <h1><i class="fa-solid fa-shop"></i>  <span id="NU"></span></h1>
     <ul>
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><button id="carritoBoton" class="carrito-boton"><i class="fa-solid fa-cart-arrow-down"></i></button></li>
         <li><button  onclick="cerrarSession()">LogOut</button></li>
     </ul>
     </nav>
+    
+    <div id="carrito" class="cart" style="display: none;">
+        <h2>Carrito de Compras</h2>
+        <button id="cerrarCarrito" class="cerrar-carrito">Cerrar</button>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-total">
+            <p>Total: <span id="cartTotal">0.00</span> $</p>
+            <button id="comprar" class="comprar-boton">Comprar</button>
+        </div>
+    </div>
 
     <div id="contendor"></div>
 
-    <script src="./js/productos.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/render.js"></script>
+
     <script src="https://kit.fontawesome.com/76e20a326e.js" crossorigin="anonymous"></script>
     
 </body>

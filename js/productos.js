@@ -1,36 +1,6 @@
-let contenedor = document.getElementById('contendor')
-
 const productos = [
-    {titulo:"perfume1",img:'./img/perfume1.jpg',precio:150000,stock:20},
-    {titulo:"perfume2",img:'./img/perfume2.jpg',precio:150000,stock:10},
-    {titulo:"perfume3",img:'./img/perfume3.avif',precio:150000,stock:0}
-]
-
-productos.forEach((prod)=>{
-    let card = document.createElement('div')
-    card.classList.add('card')
-
-    let img = document.createElement('img')
-    img.setAttribute('src',prod.img)
-
-    let h2 = document.createElement('h2')
-    h2.textContent = `${prod.titulo} (stock:${prod.stock})`
-
-    let p = document.createElement('p')
-    p.textContent = `$${prod.precio}`
-
-
-    if(prod.stock == 0){
-        img.setAttribute('src','./img/img2-1.jpg')
-        card.style.background = 'red'
-        p.innerHTML=`<s>${prod.precio}</s>` 
-
-    }
-
-
-    contenedor.append(card)
-    card.appendChild(img)
-    card.appendChild(h2)
-    card.appendChild(p)
-
-})
+    {nombre:'remera',precio:10000,stock:20,img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2jj-Ot0mjIDN2qH6eN6q-KM5bhC3awQzfg&s'},
+    {nombre:'pantalon',precio:10000,stock:20,img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXwJ5QmzbYGxbPGfwOPo7L6y02j1I1HaXWuQ&s'},
+    {nombre:'cartera',precio:10000,stock:0,img:'https://e7.pngegg.com/pngimages/721/410/png-clipart-wallet-handbag-designer-brown-long-ladies-wallet-zipper-brown.png'},
+    {nombre:'zapatillas',precio:10000,stock:20,img:'https://i.pinimg.com/474x/b0/94/3b/b0943b438af0ebb30bd539f910b6228c.jpg'},
+];
