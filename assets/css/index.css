@@ -20,15 +20,19 @@ nav ul li {
     display: inline;
     margin-right: 10px;
 }
+#CP{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+}
 .card {
     position: relative;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
-    margin: 20px;
-    width: 300px;
-    display: inline-block;
-    vertical-align: top;
+    width:230px;
+    margin:20px;
     background-color: #f9f9f9;
 }
 .card h2 {
@@ -71,18 +75,18 @@ a:hover {
 
 
 /* carrito */
-
 .cart {
     border: 1px solid #ddd;
+    border-radius: 5px;
     padding: 1rem;
     width: 100%;
     max-width: 600px;
     position: absolute;
     top: 10%;
-    right: 10%;
+    right: 16%;
     background-color: white;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.674);
 }
 
 .cart-items {
@@ -104,26 +108,72 @@ input[type="number"] {
 }
 
 .cerrar-carrito {
-    display: block;
-    margin-bottom: 1rem;
+    display: flex;
+    width: 50px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: #f44336;
+}
+.cerrar-carrito i {
+    font-size: 30px;
+    text-shadow: -1px -1px 5px  white;
 }
 
 .cerrar-carrito:hover {
     background-color: #e31e1e;
 }
+.eliminarProducto{
+    padding:6px ;
+    border: none;
+    background-color: #f44336;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.eliminarProducto i{
+    font-size: 20px;
+    text-shadow: -1px -1px 5px white;
+}
+.eliminarProducto:hover{
+    background-color: #e31e1e;
+}
 
 .carrito-boton {
     background-color: #4CAF50;
+    border-radius: 10px;
     color: white;
-    border: none;
+    border: 1px solid red;
     padding: 0.5rem 1rem;
     cursor: pointer;
     position: relative;
+    top: 3px;
+    right: 20px;
 }
 
 .carrito-boton:hover {
     background-color: #45a049;
+}
+
+.carrito-boton i {
+    font-size: 20px;
+}
+
+#contadorCarrito {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
 }
 
 .comprar-boton {
@@ -146,4 +196,36 @@ input[type="number"] {
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
+.botonCartError{
+    background-color: #b03636;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+/* new */
+.buscador{
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #e31e1e;
+    background-color: rgba(128, 128, 128, 0.646);
+    color: white;
+    text-align: center;
 
+}
+.buscador::placeholder{color: wheat;}
+
+#selectorProductos{
+    background-color: rgba(128, 128, 128, 0.646);
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #e31e1e;
+    color: white;
+    text-align: center;
+}
+#selectorProductos option{
+    background-color: rgba(128, 128, 128, 0.646);
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+}

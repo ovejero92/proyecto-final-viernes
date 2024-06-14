@@ -14,16 +14,19 @@
     <nav>
         
         <h1><i class="fa-solid fa-shop"></i>  <span id="NU"></span></h1>
-    <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><button id="carritoBoton" class="carrito-boton"><i class="fa-solid fa-cart-arrow-down"></i></button></li>
-        <li><button  onclick="cerrarSession()">LogOut</button></li>
+        <div>
+        <input type="text" class="buscador" id="filtro"  oninput="buscarProducto(this.value)" placeholder="Buscar productos..."> 
+        <select name="categori" id="selectorProductos" onchange="buscarCategoria(this.value)"></select>
+        </div>
+        <ul>
+        <li><button id="carritoBoton" class="carrito-boton"><i class="fa-solid fa-cart-arrow-down"></i><span id="contadorCarrito">0</span></button></li>
+        <li><button  onclick="cerrarSession()"class="bonton-logout">LogOut</button></li>
     </ul>
     </nav>
     
     <div id="carrito" class="cart" style="display: none;">
         <h2>Carrito de Compras</h2>
-        <button id="cerrarCarrito" class="cerrar-carrito">Cerrar</button>
+        <button id="cerrarCarrito" class="cerrar-carrito"><i class="fa-solid fa-xmark"></i></button>
         <div id="cartItems" class="cart-items"></div>
         <div class="cart-total">
             <p>Total: <span id="cartTotal">0.00</span> $</p>
@@ -31,12 +34,12 @@
         </div>
     </div>
 
-    <div id="contendor"></div>
+    <div id="CP"></div>
 
     <script src="./js/index.js"></script>
-    <script src="./js/productos.js"></script>
+    <script src="./js/alertas.js"></script>
     <script src="./js/render.js"></script>
-
+    s
     <script src="https://kit.fontawesome.com/76e20a326e.js" crossorigin="anonymous"></script>
     
 </body>
